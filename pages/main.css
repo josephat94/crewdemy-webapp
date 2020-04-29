@@ -1,0 +1,38 @@
+.navbar {
+  height: 40px;
+}
+.layout-body {
+  height: calc(100vh - 88px);
+  overflow-y: auto;
+}
+.wow-animate {
+  animation: wow 0.5s;
+}
+
+.grow {
+  transition: all 0.2s;
+  transform: scale(1);
+}
+.grow:hover {
+  transform: scale(1.2);
+}
+
+.grow-sm {
+  transition: all 0.2s;
+  transform: scale(1);
+}
+.grow-sm:hover {
+  transform: scale(1.05);
+}
+
+@keyframes wow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

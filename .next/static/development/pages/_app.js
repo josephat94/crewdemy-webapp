@@ -299,6 +299,52 @@ module.exports = _extends;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/getPrototypeOf.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _getPrototypeOf(o) {
+  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+module.exports = _getPrototypeOf;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/inherits.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/inherits.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf */ "./node_modules/@babel/runtime/helpers/setPrototypeOf.js");
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) setPrototypeOf(subClass, superClass);
+}
+
+module.exports = _inherits;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/inheritsLoose.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/inheritsLoose.js ***!
@@ -571,6 +617,29 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 }
 
 module.exports = _objectWithoutPropertiesLoose;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ../helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
+
+var assertThisInitialized = __webpack_require__(/*! ./assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return assertThisInitialized(self);
+}
+
+module.exports = _possibleConstructorReturn;
 
 /***/ }),
 
@@ -20529,6 +20598,135 @@ module.exports = copy;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/react-big-calendar/lib/css/react-big-calendar.css":
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./node_modules/react-big-calendar/lib/css/react-big-calendar.css ***!
+  \***************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, "@charset \"UTF-8\";\n.rbc-btn {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\nbutton.rbc-btn {\n  overflow: visible;\n  text-transform: none;\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled].rbc-btn {\n  cursor: not-allowed; }\n\nbutton.rbc-input::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n.rbc-calendar {\n  box-sizing: border-box;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: stretch; }\n\n.rbc-calendar *,\n.rbc-calendar *:before,\n.rbc-calendar *:after {\n  box-sizing: inherit; }\n\n.rbc-abs-full, .rbc-row-bg {\n  overflow: hidden;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0; }\n\n.rbc-ellipsis, .rbc-event-label, .rbc-row-segment .rbc-event-content, .rbc-show-more {\n  display: block;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n.rbc-rtl {\n  direction: rtl; }\n\n.rbc-off-range {\n  color: #999999; }\n\n.rbc-off-range-bg {\n  background: #e6e6e6; }\n\n.rbc-header {\n  overflow: hidden;\n  flex: 1 0;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  padding: 0 3px;\n  text-align: center;\n  vertical-align: middle;\n  font-weight: bold;\n  font-size: 90%;\n  min-height: 0;\n  border-bottom: 1px solid #DDD; }\n  .rbc-header + .rbc-header {\n    border-left: 1px solid #DDD; }\n  .rbc-rtl .rbc-header + .rbc-header {\n    border-left-width: 0;\n    border-right: 1px solid #DDD; }\n  .rbc-header > a, .rbc-header > a:active, .rbc-header > a:visited {\n    color: inherit;\n    text-decoration: none; }\n\n.rbc-row-content {\n  position: relative;\n  -moz-user-select: none;\n   -ms-user-select: none;\n       user-select: none;\n  -webkit-user-select: none;\n  z-index: 4; }\n\n.rbc-today {\n  background-color: #eaf6ff; }\n\n.rbc-toolbar {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  margin-bottom: 10px;\n  font-size: 16px; }\n  .rbc-toolbar .rbc-toolbar-label {\n    flex-grow: 1;\n    padding: 0 10px;\n    text-align: center; }\n  .rbc-toolbar button {\n    color: #373a3c;\n    display: inline-block;\n    margin: 0;\n    text-align: center;\n    vertical-align: middle;\n    background: none;\n    background-image: none;\n    border: 1px solid #ccc;\n    padding: .375rem 1rem;\n    border-radius: 4px;\n    line-height: normal;\n    white-space: nowrap; }\n    .rbc-toolbar button:active, .rbc-toolbar button.rbc-active {\n      background-image: none;\n      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n      background-color: #e6e6e6;\n      border-color: #adadad; }\n      .rbc-toolbar button:active:hover, .rbc-toolbar button:active:focus, .rbc-toolbar button.rbc-active:hover, .rbc-toolbar button.rbc-active:focus {\n        color: #373a3c;\n        background-color: #d4d4d4;\n        border-color: #8c8c8c; }\n    .rbc-toolbar button:focus {\n      color: #373a3c;\n      background-color: #e6e6e6;\n      border-color: #adadad; }\n    .rbc-toolbar button:hover {\n      color: #373a3c;\n      background-color: #e6e6e6;\n      border-color: #adadad; }\n\n.rbc-btn-group {\n  display: inline-block;\n  white-space: nowrap; }\n  .rbc-btn-group > button:first-child:not(:last-child) {\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0; }\n  .rbc-btn-group > button:last-child:not(:first-child) {\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0; }\n  .rbc-rtl .rbc-btn-group > button:first-child:not(:last-child) {\n    border-radius: 4px;\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0; }\n  .rbc-rtl .rbc-btn-group > button:last-child:not(:first-child) {\n    border-radius: 4px;\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0; }\n  .rbc-btn-group > button:not(:first-child):not(:last-child) {\n    border-radius: 0; }\n  .rbc-btn-group button + button {\n    margin-left: -1px; }\n  .rbc-rtl .rbc-btn-group button + button {\n    margin-left: 0;\n    margin-right: -1px; }\n  .rbc-btn-group + .rbc-btn-group,\n  .rbc-btn-group + button {\n    margin-left: 10px; }\n\n.rbc-event {\n  border: none;\n  box-sizing: border-box;\n  box-shadow: none;\n  margin: 0;\n  padding: 2px 5px;\n  background-color: #3174ad;\n  border-radius: 5px;\n  color: #fff;\n  cursor: pointer;\n  width: 100%;\n  text-align: left; }\n  .rbc-slot-selecting .rbc-event {\n    cursor: inherit;\n    pointer-events: none; }\n  .rbc-event.rbc-selected {\n    background-color: #265985; }\n  .rbc-event:focus {\n    outline: 5px auto #3b99fc; }\n\n.rbc-event-label {\n  font-size: 80%; }\n\n.rbc-event-overlaps {\n  box-shadow: -1px 1px 5px 0px rgba(51, 51, 51, 0.5); }\n\n.rbc-event-continues-prior {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0; }\n\n.rbc-event-continues-after {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0; }\n\n.rbc-event-continues-earlier {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0; }\n\n.rbc-event-continues-later {\n  border-bottom-left-radius: 0;\n  border-bottom-right-radius: 0; }\n\n.rbc-row {\n  display: flex;\n  flex-direction: row; }\n\n.rbc-row-segment {\n  padding: 0 1px 1px 1px; }\n\n.rbc-selected-cell {\n  background-color: rgba(0, 0, 0, 0.1); }\n\n.rbc-show-more {\n  background-color: rgba(255, 255, 255, 0.3);\n  z-index: 4;\n  font-weight: bold;\n  font-size: 85%;\n  height: auto;\n  line-height: normal; }\n\n.rbc-month-view {\n  position: relative;\n  border: 1px solid #DDD;\n  display: flex;\n  flex-direction: column;\n  flex: 1 0;\n  width: 100%;\n  -moz-user-select: none;\n   -ms-user-select: none;\n       user-select: none;\n  -webkit-user-select: none;\n  height: 100%; }\n\n.rbc-month-header {\n  display: flex;\n  flex-direction: row; }\n\n.rbc-month-row {\n  display: flex;\n  position: relative;\n  flex-direction: column;\n  flex: 1 0;\n  flex-basis: 0px;\n  overflow: hidden;\n  height: 100%; }\n  .rbc-month-row + .rbc-month-row {\n    border-top: 1px solid #DDD; }\n\n.rbc-date-cell {\n  flex: 1 1;\n  min-width: 0;\n  padding-right: 5px;\n  text-align: right; }\n  .rbc-date-cell.rbc-now {\n    font-weight: bold; }\n  .rbc-date-cell > a, .rbc-date-cell > a:active, .rbc-date-cell > a:visited {\n    color: inherit;\n    text-decoration: none; }\n\n.rbc-row-bg {\n  display: flex;\n  flex-direction: row;\n  flex: 1 0;\n  overflow: hidden; }\n\n.rbc-day-bg {\n  flex: 1 0; }\n  .rbc-day-bg + .rbc-day-bg {\n    border-left: 1px solid #DDD; }\n  .rbc-rtl .rbc-day-bg + .rbc-day-bg {\n    border-left-width: 0;\n    border-right: 1px solid #DDD; }\n\n.rbc-overlay {\n  position: absolute;\n  z-index: 5;\n  border: 1px solid #e5e5e5;\n  background-color: #fff;\n  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);\n  padding: 10px; }\n  .rbc-overlay > * + * {\n    margin-top: 1px; }\n\n.rbc-overlay-header {\n  border-bottom: 1px solid #e5e5e5;\n  margin: -10px -10px 5px -10px;\n  padding: 2px 10px; }\n\n.rbc-agenda-view {\n  display: flex;\n  flex-direction: column;\n  flex: 1 0;\n  overflow: auto; }\n  .rbc-agenda-view table.rbc-agenda-table {\n    width: 100%;\n    border: 1px solid #DDD;\n    border-spacing: 0;\n    border-collapse: collapse; }\n    .rbc-agenda-view table.rbc-agenda-table tbody > tr > td {\n      padding: 5px 10px;\n      vertical-align: top; }\n    .rbc-agenda-view table.rbc-agenda-table .rbc-agenda-time-cell {\n      padding-left: 15px;\n      padding-right: 15px;\n      text-transform: lowercase; }\n    .rbc-agenda-view table.rbc-agenda-table tbody > tr > td + td {\n      border-left: 1px solid #DDD; }\n    .rbc-rtl .rbc-agenda-view table.rbc-agenda-table tbody > tr > td + td {\n      border-left-width: 0;\n      border-right: 1px solid #DDD; }\n    .rbc-agenda-view table.rbc-agenda-table tbody > tr + tr {\n      border-top: 1px solid #DDD; }\n    .rbc-agenda-view table.rbc-agenda-table thead > tr > th {\n      padding: 3px 5px;\n      text-align: left;\n      border-bottom: 1px solid #DDD; }\n      .rbc-rtl .rbc-agenda-view table.rbc-agenda-table thead > tr > th {\n        text-align: right; }\n\n.rbc-agenda-time-cell {\n  text-transform: lowercase; }\n  .rbc-agenda-time-cell .rbc-continues-after:after {\n    content: ' »'; }\n  .rbc-agenda-time-cell .rbc-continues-prior:before {\n    content: '« '; }\n\n.rbc-agenda-date-cell,\n.rbc-agenda-time-cell {\n  white-space: nowrap; }\n\n.rbc-agenda-event-cell {\n  width: 100%; }\n\n.rbc-time-column {\n  display: flex;\n  flex-direction: column;\n  min-height: 100%; }\n  .rbc-time-column .rbc-timeslot-group {\n    flex: 1 1; }\n\n.rbc-timeslot-group {\n  border-bottom: 1px solid #DDD;\n  min-height: 40px;\n  display: flex;\n  flex-flow: column nowrap; }\n\n.rbc-time-gutter,\n.rbc-header-gutter {\n  flex: none; }\n\n.rbc-label {\n  padding: 0 5px; }\n\n.rbc-day-slot {\n  position: relative; }\n  .rbc-day-slot .rbc-events-container {\n    bottom: 0;\n    left: 0;\n    position: absolute;\n    right: 0;\n    margin-right: 10px;\n    top: 0; }\n    .rbc-day-slot .rbc-events-container.rbc-rtl {\n      left: 10px;\n      right: 0; }\n  .rbc-day-slot .rbc-event {\n    border: 1px solid #265985;\n    display: flex;\n    max-height: 100%;\n    min-height: 20px;\n    flex-flow: column wrap;\n    align-items: flex-start;\n    overflow: hidden;\n    position: absolute; }\n  .rbc-day-slot .rbc-event-label {\n    flex: none;\n    padding-right: 5px;\n    width: auto; }\n  .rbc-day-slot .rbc-event-content {\n    width: 100%;\n    flex: 1 1;\n    word-wrap: break-word;\n    line-height: 1;\n    height: 100%;\n    min-height: 1em; }\n  .rbc-day-slot .rbc-time-slot {\n    border-top: 1px solid #f7f7f7; }\n\n.rbc-time-view-resources .rbc-time-gutter,\n.rbc-time-view-resources .rbc-time-header-gutter {\n  position: -webkit-sticky;\n  position: sticky;\n  left: 0;\n  background-color: white;\n  border-right: 1px solid #DDD;\n  z-index: 10;\n  margin-right: -1px; }\n\n.rbc-time-view-resources .rbc-time-header {\n  overflow: hidden; }\n\n.rbc-time-view-resources .rbc-time-header-content {\n  min-width: auto;\n  flex: 1 0;\n  flex-basis: 0px; }\n\n.rbc-time-view-resources .rbc-time-header-cell-single-day {\n  display: none; }\n\n.rbc-time-view-resources .rbc-day-slot {\n  min-width: 140px; }\n\n.rbc-time-view-resources .rbc-header,\n.rbc-time-view-resources .rbc-day-bg {\n  width: 140px;\n  flex: 1 1;\n  flex-basis: 0 px; }\n\n.rbc-time-header-content + .rbc-time-header-content {\n  margin-left: -1px; }\n\n.rbc-time-slot {\n  flex: 1 0; }\n  .rbc-time-slot.rbc-now {\n    font-weight: bold; }\n\n.rbc-day-header {\n  text-align: center; }\n\n.rbc-slot-selection {\n  z-index: 10;\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.5);\n  color: white;\n  font-size: 75%;\n  width: 100%;\n  padding: 3px; }\n\n.rbc-slot-selecting {\n  cursor: move; }\n\n.rbc-time-view {\n  display: flex;\n  flex-direction: column;\n  flex: 1 1;\n  width: 100%;\n  border: 1px solid #DDD;\n  min-height: 0; }\n  .rbc-time-view .rbc-time-gutter {\n    white-space: nowrap; }\n  .rbc-time-view .rbc-allday-cell {\n    box-sizing: content-box;\n    width: 100%;\n    height: 100%;\n    position: relative; }\n  .rbc-time-view .rbc-allday-cell + .rbc-allday-cell {\n    border-left: 1px solid #DDD; }\n  .rbc-time-view .rbc-allday-events {\n    position: relative;\n    z-index: 4; }\n  .rbc-time-view .rbc-row {\n    box-sizing: border-box;\n    min-height: 20px; }\n\n.rbc-time-header {\n  display: flex;\n  flex: 0 0 auto;\n  flex-direction: row; }\n  .rbc-time-header.rbc-overflowing {\n    border-right: 1px solid #DDD; }\n  .rbc-rtl .rbc-time-header.rbc-overflowing {\n    border-right-width: 0;\n    border-left: 1px solid #DDD; }\n  .rbc-time-header > .rbc-row:first-child {\n    border-bottom: 1px solid #DDD; }\n  .rbc-time-header > .rbc-row.rbc-row-resource {\n    border-bottom: 1px solid #DDD; }\n\n.rbc-time-header-cell-single-day {\n  display: none; }\n\n.rbc-time-header-content {\n  flex: 1 1;\n  display: flex;\n  min-width: 0;\n  flex-direction: column;\n  border-left: 1px solid #DDD; }\n  .rbc-rtl .rbc-time-header-content {\n    border-left-width: 0;\n    border-right: 1px solid #DDD; }\n  .rbc-time-header-content > .rbc-row.rbc-row-resource {\n    border-bottom: 1px solid #DDD;\n    flex-shrink: 0; }\n\n.rbc-time-content {\n  display: flex;\n  flex: 1 0;\n  align-items: flex-start;\n  width: 100%;\n  border-top: 2px solid #DDD;\n  overflow-y: auto;\n  position: relative; }\n  .rbc-time-content > .rbc-time-gutter {\n    flex: none; }\n  .rbc-time-content > * + * > * {\n    border-left: 1px solid #DDD; }\n  .rbc-rtl .rbc-time-content > * + * > * {\n    border-left-width: 0;\n    border-right: 1px solid #DDD; }\n  .rbc-time-content > .rbc-day-slot {\n    width: 100%;\n    -moz-user-select: none;\n     -ms-user-select: none;\n         user-select: none;\n    -webkit-user-select: none; }\n\n.rbc-current-time-indicator {\n  position: absolute;\n  z-index: 3;\n  left: 0;\n  right: 0;\n  height: 1px;\n  background-color: #74ad31;\n  pointer-events: none; }\n", "",{"version":3,"sources":["/home/jreyes/Desktop/crewdemy/node_modules/react-big-calendar/lib/css/react-big-calendar.css"],"names":[],"mappings":"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","file":"react-big-calendar.css","sourcesContent":["@charset \"UTF-8\";\n.rbc-btn {\n  color: inherit;\n  font: inherit;\n  margin: 0; }\n\nbutton.rbc-btn {\n  overflow: visible;\n  text-transform: none;\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled].rbc-btn {\n  cursor: not-allowed; }\n\nbutton.rbc-input::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n.rbc-calendar {\n  box-sizing: border-box;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: stretch; }\n\n.rbc-calendar *,\n.rbc-calendar *:before,\n.rbc-calendar *:after {\n  box-sizing: inherit; }\n\n.rbc-abs-full, .rbc-row-bg {\n  overflow: hidden;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0; }\n\n.rbc-ellipsis, .rbc-event-label, .rbc-row-segment .rbc-event-content, .rbc-show-more {\n  display: block;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n.rbc-rtl {\n  direction: rtl; }\n\n.rbc-off-range {\n  color: #999999; }\n\n.rbc-off-range-bg {\n  background: #e6e6e6; }\n\n.rbc-header {\n  overflow: hidden;\n  flex: 1 0 0%;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  padding: 0 3px;\n  text-align: center;\n  vertical-align: middle;\n  font-weight: bold;\n  font-size: 90%;\n  min-height: 0;\n  border-bottom: 1px solid #DDD; }\n  .rbc-header + .rbc-header {\n    border-left: 1px solid #DDD; }\n  .rbc-rtl .rbc-header + .rbc-header {\n    border-left-width: 0;\n    border-right: 1px solid #DDD; }\n  .rbc-header > a, .rbc-header > a:active, .rbc-header > a:visited {\n    color: inherit;\n    text-decoration: none; }\n\n.rbc-row-content {\n  position: relative;\n  user-select: none;\n  -webkit-user-select: none;\n  z-index: 4; }\n\n.rbc-today {\n  background-color: #eaf6ff; }\n\n.rbc-toolbar {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  margin-bottom: 10px;\n  font-size: 16px; }\n  .rbc-toolbar .rbc-toolbar-label {\n    flex-grow: 1;\n    padding: 0 10px;\n    text-align: center; }\n  .rbc-toolbar button {\n    color: #373a3c;\n    display: inline-block;\n    margin: 0;\n    text-align: center;\n    vertical-align: middle;\n    background: none;\n    background-image: none;\n    border: 1px solid #ccc;\n    padding: .375rem 1rem;\n    border-radius: 4px;\n    line-height: normal;\n    white-space: nowrap; }\n    .rbc-toolbar button:active, .rbc-toolbar button.rbc-active {\n      background-image: none;\n      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n      background-color: #e6e6e6;\n      border-color: #adadad; }\n      .rbc-toolbar button:active:hover, .rbc-toolbar button:active:focus, .rbc-toolbar button.rbc-active:hover, .rbc-toolbar button.rbc-active:focus {\n        color: #373a3c;\n        background-color: #d4d4d4;\n        border-color: #8c8c8c; }\n    .rbc-toolbar button:focus {\n      color: #373a3c;\n      background-color: #e6e6e6;\n      border-color: #adadad; }\n    .rbc-toolbar button:hover {\n      color: #373a3c;\n      background-color: #e6e6e6;\n      border-color: #adadad; }\n\n.rbc-btn-group {\n  display: inline-block;\n  white-space: nowrap; }\n  .rbc-btn-group > button:first-child:not(:last-child) {\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0; }\n  .rbc-btn-group > button:last-child:not(:first-child) {\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0; }\n  .rbc-rtl .rbc-btn-group > button:first-child:not(:last-child) {\n    border-radius: 4px;\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0; }\n  .rbc-rtl .rbc-btn-group > button:last-child:not(:first-child) {\n    border-radius: 4px;\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0; }\n  .rbc-btn-group > button:not(:first-child):not(:last-child) {\n    border-radius: 0; }\n  .rbc-btn-group button + button {\n    margin-left: -1px; }\n  .rbc-rtl .rbc-btn-group button + button {\n    margin-left: 0;\n    margin-right: -1px; }\n  .rbc-btn-group + .rbc-btn-group,\n  .rbc-btn-group + button {\n    margin-left: 10px; }\n\n.rbc-event {\n  border: none;\n  box-sizing: border-box;\n  box-shadow: none;\n  margin: 0;\n  padding: 2px 5px;\n  background-color: #3174ad;\n  border-radius: 5px;\n  color: #fff;\n  cursor: pointer;\n  width: 100%;\n  text-align: left; }\n  .rbc-slot-selecting .rbc-event {\n    cursor: inherit;\n    pointer-events: none; }\n  .rbc-event.rbc-selected {\n    background-color: #265985; }\n  .rbc-event:focus {\n    outline: 5px auto #3b99fc; }\n\n.rbc-event-label {\n  font-size: 80%; }\n\n.rbc-event-overlaps {\n  box-shadow: -1px 1px 5px 0px rgba(51, 51, 51, 0.5); }\n\n.rbc-event-continues-prior {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0; }\n\n.rbc-event-continues-after {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0; }\n\n.rbc-event-continues-earlier {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0; }\n\n.rbc-event-continues-later {\n  border-bottom-left-radius: 0;\n  border-bottom-right-radius: 0; }\n\n.rbc-row {\n  display: flex;\n  flex-direction: row; }\n\n.rbc-row-segment {\n  padding: 0 1px 1px 1px; }\n\n.rbc-selected-cell {\n  background-color: rgba(0, 0, 0, 0.1); }\n\n.rbc-show-more {\n  background-color: rgba(255, 255, 255, 0.3);\n  z-index: 4;\n  font-weight: bold;\n  font-size: 85%;\n  height: auto;\n  line-height: normal; }\n\n.rbc-month-view {\n  position: relative;\n  border: 1px solid #DDD;\n  display: flex;\n  flex-direction: column;\n  flex: 1 0 0;\n  width: 100%;\n  user-select: none;\n  -webkit-user-select: none;\n  height: 100%; }\n\n.rbc-month-header {\n  display: flex;\n  flex-direction: row; }\n\n.rbc-month-row {\n  display: flex;\n  position: relative;\n  flex-direction: column;\n  flex: 1 0 0;\n  flex-basis: 0px;\n  overflow: hidden;\n  height: 100%; }\n  .rbc-month-row + .rbc-month-row {\n    border-top: 1px solid #DDD; }\n\n.rbc-date-cell {\n  flex: 1 1 0;\n  min-width: 0;\n  padding-right: 5px;\n  text-align: right; }\n  .rbc-date-cell.rbc-now {\n    font-weight: bold; }\n  .rbc-date-cell > a, .rbc-date-cell > a:active, .rbc-date-cell > a:visited {\n    color: inherit;\n    text-decoration: none; }\n\n.rbc-row-bg {\n  display: flex;\n  flex-direction: row;\n  flex: 1 0 0;\n  overflow: hidden; }\n\n.rbc-day-bg {\n  flex: 1 0 0%; }\n  .rbc-day-bg + .rbc-day-bg {\n    border-left: 1px solid #DDD; }\n  .rbc-rtl .rbc-day-bg + .rbc-day-bg {\n    border-left-width: 0;\n    border-right: 1px solid #DDD; }\n\n.rbc-overlay {\n  position: absolute;\n  z-index: 5;\n  border: 1px solid #e5e5e5;\n  background-color: #fff;\n  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);\n  padding: 10px; }\n  .rbc-overlay > * + * {\n    margin-top: 1px; }\n\n.rbc-overlay-header {\n  border-bottom: 1px solid #e5e5e5;\n  margin: -10px -10px 5px -10px;\n  padding: 2px 10px; }\n\n.rbc-agenda-view {\n  display: flex;\n  flex-direction: column;\n  flex: 1 0 0;\n  overflow: auto; }\n  .rbc-agenda-view table.rbc-agenda-table {\n    width: 100%;\n    border: 1px solid #DDD;\n    border-spacing: 0;\n    border-collapse: collapse; }\n    .rbc-agenda-view table.rbc-agenda-table tbody > tr > td {\n      padding: 5px 10px;\n      vertical-align: top; }\n    .rbc-agenda-view table.rbc-agenda-table .rbc-agenda-time-cell {\n      padding-left: 15px;\n      padding-right: 15px;\n      text-transform: lowercase; }\n    .rbc-agenda-view table.rbc-agenda-table tbody > tr > td + td {\n      border-left: 1px solid #DDD; }\n    .rbc-rtl .rbc-agenda-view table.rbc-agenda-table tbody > tr > td + td {\n      border-left-width: 0;\n      border-right: 1px solid #DDD; }\n    .rbc-agenda-view table.rbc-agenda-table tbody > tr + tr {\n      border-top: 1px solid #DDD; }\n    .rbc-agenda-view table.rbc-agenda-table thead > tr > th {\n      padding: 3px 5px;\n      text-align: left;\n      border-bottom: 1px solid #DDD; }\n      .rbc-rtl .rbc-agenda-view table.rbc-agenda-table thead > tr > th {\n        text-align: right; }\n\n.rbc-agenda-time-cell {\n  text-transform: lowercase; }\n  .rbc-agenda-time-cell .rbc-continues-after:after {\n    content: ' »'; }\n  .rbc-agenda-time-cell .rbc-continues-prior:before {\n    content: '« '; }\n\n.rbc-agenda-date-cell,\n.rbc-agenda-time-cell {\n  white-space: nowrap; }\n\n.rbc-agenda-event-cell {\n  width: 100%; }\n\n.rbc-time-column {\n  display: flex;\n  flex-direction: column;\n  min-height: 100%; }\n  .rbc-time-column .rbc-timeslot-group {\n    flex: 1; }\n\n.rbc-timeslot-group {\n  border-bottom: 1px solid #DDD;\n  min-height: 40px;\n  display: flex;\n  flex-flow: column nowrap; }\n\n.rbc-time-gutter,\n.rbc-header-gutter {\n  flex: none; }\n\n.rbc-label {\n  padding: 0 5px; }\n\n.rbc-day-slot {\n  position: relative; }\n  .rbc-day-slot .rbc-events-container {\n    bottom: 0;\n    left: 0;\n    position: absolute;\n    right: 0;\n    margin-right: 10px;\n    top: 0; }\n    .rbc-day-slot .rbc-events-container.rbc-rtl {\n      left: 10px;\n      right: 0; }\n  .rbc-day-slot .rbc-event {\n    border: 1px solid #265985;\n    display: flex;\n    max-height: 100%;\n    min-height: 20px;\n    flex-flow: column wrap;\n    align-items: flex-start;\n    overflow: hidden;\n    position: absolute; }\n  .rbc-day-slot .rbc-event-label {\n    flex: none;\n    padding-right: 5px;\n    width: auto; }\n  .rbc-day-slot .rbc-event-content {\n    width: 100%;\n    flex: 1 1 0;\n    word-wrap: break-word;\n    line-height: 1;\n    height: 100%;\n    min-height: 1em; }\n  .rbc-day-slot .rbc-time-slot {\n    border-top: 1px solid #f7f7f7; }\n\n.rbc-time-view-resources .rbc-time-gutter,\n.rbc-time-view-resources .rbc-time-header-gutter {\n  position: sticky;\n  left: 0;\n  background-color: white;\n  border-right: 1px solid #DDD;\n  z-index: 10;\n  margin-right: -1px; }\n\n.rbc-time-view-resources .rbc-time-header {\n  overflow: hidden; }\n\n.rbc-time-view-resources .rbc-time-header-content {\n  min-width: auto;\n  flex: 1 0 0;\n  flex-basis: 0px; }\n\n.rbc-time-view-resources .rbc-time-header-cell-single-day {\n  display: none; }\n\n.rbc-time-view-resources .rbc-day-slot {\n  min-width: 140px; }\n\n.rbc-time-view-resources .rbc-header,\n.rbc-time-view-resources .rbc-day-bg {\n  width: 140px;\n  flex: 1 1 0;\n  flex-basis: 0 px; }\n\n.rbc-time-header-content + .rbc-time-header-content {\n  margin-left: -1px; }\n\n.rbc-time-slot {\n  flex: 1 0 0; }\n  .rbc-time-slot.rbc-now {\n    font-weight: bold; }\n\n.rbc-day-header {\n  text-align: center; }\n\n.rbc-slot-selection {\n  z-index: 10;\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.5);\n  color: white;\n  font-size: 75%;\n  width: 100%;\n  padding: 3px; }\n\n.rbc-slot-selecting {\n  cursor: move; }\n\n.rbc-time-view {\n  display: flex;\n  flex-direction: column;\n  flex: 1;\n  width: 100%;\n  border: 1px solid #DDD;\n  min-height: 0; }\n  .rbc-time-view .rbc-time-gutter {\n    white-space: nowrap; }\n  .rbc-time-view .rbc-allday-cell {\n    box-sizing: content-box;\n    width: 100%;\n    height: 100%;\n    position: relative; }\n  .rbc-time-view .rbc-allday-cell + .rbc-allday-cell {\n    border-left: 1px solid #DDD; }\n  .rbc-time-view .rbc-allday-events {\n    position: relative;\n    z-index: 4; }\n  .rbc-time-view .rbc-row {\n    box-sizing: border-box;\n    min-height: 20px; }\n\n.rbc-time-header {\n  display: flex;\n  flex: 0 0 auto;\n  flex-direction: row; }\n  .rbc-time-header.rbc-overflowing {\n    border-right: 1px solid #DDD; }\n  .rbc-rtl .rbc-time-header.rbc-overflowing {\n    border-right-width: 0;\n    border-left: 1px solid #DDD; }\n  .rbc-time-header > .rbc-row:first-child {\n    border-bottom: 1px solid #DDD; }\n  .rbc-time-header > .rbc-row.rbc-row-resource {\n    border-bottom: 1px solid #DDD; }\n\n.rbc-time-header-cell-single-day {\n  display: none; }\n\n.rbc-time-header-content {\n  flex: 1;\n  display: flex;\n  min-width: 0;\n  flex-direction: column;\n  border-left: 1px solid #DDD; }\n  .rbc-rtl .rbc-time-header-content {\n    border-left-width: 0;\n    border-right: 1px solid #DDD; }\n  .rbc-time-header-content > .rbc-row.rbc-row-resource {\n    border-bottom: 1px solid #DDD;\n    flex-shrink: 0; }\n\n.rbc-time-content {\n  display: flex;\n  flex: 1 0 0%;\n  align-items: flex-start;\n  width: 100%;\n  border-top: 2px solid #DDD;\n  overflow-y: auto;\n  position: relative; }\n  .rbc-time-content > .rbc-time-gutter {\n    flex: none; }\n  .rbc-time-content > * + * > * {\n    border-left: 1px solid #DDD; }\n  .rbc-rtl .rbc-time-content > * + * > * {\n    border-left-width: 0;\n    border-right: 1px solid #DDD; }\n  .rbc-time-content > .rbc-day-slot {\n    width: 100%;\n    user-select: none;\n    -webkit-user-select: none; }\n\n.rbc-current-time-indicator {\n  position: absolute;\n  z-index: 3;\n  left: 0;\n  right: 0;\n  height: 1px;\n  background-color: #74ad31;\n  pointer-events: none; }\n"]}]);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./pages/main.css":
+/*!***************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./pages/main.css ***!
+  \***************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".navbar {\n  height: 40px;\n}\n.layout-body {\n  height: calc(100vh - 88px);\n  overflow-y: auto;\n}\n.wow-animate {\n  -webkit-animation: wow 0.5s;\n          animation: wow 0.5s;\n}\n\n.grow {\n  transition: all 0.2s;\n  transform: scale(1);\n}\n.grow:hover {\n  transform: scale(1.2);\n}\n\n.grow-sm {\n  transition: all 0.2s;\n  transform: scale(1);\n}\n.grow-sm:hover {\n  transform: scale(1.05);\n}\n\n@-webkit-keyframes wow {\n  0% {\n    transform: scale(0);\n  }\n  50% {\n    transform: scale(1.5);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes wow {\n  0% {\n    transform: scale(0);\n  }\n  50% {\n    transform: scale(1.5);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n", "",{"version":3,"sources":["/home/jreyes/Desktop/crewdemy/pages/main.css"],"names":[],"mappings":"AAAA;EACE,YAAY;AACd;AACA;EACE,0BAA0B;EAC1B,gBAAgB;AAClB;AACA;EACE,2BAAmB;UAAnB,mBAAmB;AACrB;;AAEA;EACE,oBAAoB;EACpB,mBAAmB;AACrB;AACA;EACE,qBAAqB;AACvB;;AAEA;EACE,oBAAoB;EACpB,mBAAmB;AACrB;AACA;EACE,sBAAsB;AACxB;;AAEA;EACE;IACE,mBAAmB;EACrB;EACA;IACE,qBAAqB;EACvB;EACA;IACE,mBAAmB;EACrB;AACF;;AAVA;EACE;IACE,mBAAmB;EACrB;EACA;IACE,qBAAqB;EACvB;EACA;IACE,mBAAmB;EACrB;AACF","file":"main.css","sourcesContent":[".navbar {\n  height: 40px;\n}\n.layout-body {\n  height: calc(100vh - 88px);\n  overflow-y: auto;\n}\n.wow-animate {\n  animation: wow 0.5s;\n}\n\n.grow {\n  transition: all 0.2s;\n  transform: scale(1);\n}\n.grow:hover {\n  transform: scale(1.2);\n}\n\n.grow-sm {\n  transition: all 0.2s;\n  transform: scale(1);\n}\n.grow-sm:hover {\n  transform: scale(1.05);\n}\n\n@keyframes wow {\n  0% {\n    transform: scale(0);\n  }\n  50% {\n    transform: scale(1.5);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n"]}]);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], "{").concat(content, "}");
+      }
+
+      return content;
+    }).join('');
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
+
+
+  list.i = function (modules, mediaQuery) {
+    if (typeof modules === 'string') {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    for (var i = 0; i < this.length; i++) {
+      // eslint-disable-next-line prefer-destructuring
+      var id = this[i][0];
+
+      if (id != null) {
+        alreadyImportedModules[id] = true;
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = modules[_i]; // skip already imported module
+      // this implementation is not 100% perfect for weird media query combinations
+      // when a module is imported multiple times with different media queries.
+      // I hope this will never occur (Hey this way we have smaller bundles)
+
+      if (item[0] == null || !alreadyImportedModules[item[0]]) {
+        if (mediaQuery && !item[2]) {
+          item[2] = mediaQuery;
+        } else if (mediaQuery) {
+          item[2] = "(".concat(item[2], ") and (").concat(mediaQuery, ")");
+        }
+
+        list.push(item);
+      }
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring
+
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot).concat(source, " */");
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+  return "/*# ".concat(data, " */");
+}
+
+/***/ }),
+
 /***/ "./node_modules/detect-node/browser.js":
 /*!*********************************************!*\
   !*** ./node_modules/detect-node/browser.js ***!
@@ -21770,6 +21968,298 @@ function withRouter(ComposedComponent) {
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/next-server/lib/amp-context.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/amp-context.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.AmpStateContext = React.createContext({});
+
+if (true) {
+  exports.AmpStateContext.displayName = 'AmpStateContext';
+}
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/amp.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/amp.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var amp_context_1 = __webpack_require__(/*! ./amp-context */ "./node_modules/next/dist/next-server/lib/amp-context.js");
+
+function isInAmpMode() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$ampFirst = _ref.ampFirst,
+      ampFirst = _ref$ampFirst === void 0 ? false : _ref$ampFirst,
+      _ref$hybrid = _ref.hybrid,
+      hybrid = _ref$hybrid === void 0 ? false : _ref$hybrid,
+      _ref$hasQuery = _ref.hasQuery,
+      hasQuery = _ref$hasQuery === void 0 ? false : _ref$hasQuery;
+
+  return ampFirst || hybrid && hasQuery;
+}
+
+exports.isInAmpMode = isInAmpMode;
+
+function useAmp() {
+  // Don't assign the context value to a variable to save bytes
+  return isInAmpMode(react_1["default"].useContext(amp_context_1.AmpStateContext));
+}
+
+exports.useAmp = useAmp;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/head-manager-context.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/head-manager-context.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.HeadManagerContext = React.createContext(null);
+
+if (true) {
+  exports.HeadManagerContext.displayName = 'HeadManagerContext';
+}
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/head.js":
+/*!********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/head.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var side_effect_1 = __importDefault(__webpack_require__(/*! ./side-effect */ "./node_modules/next/dist/next-server/lib/side-effect.js"));
+
+var amp_context_1 = __webpack_require__(/*! ./amp-context */ "./node_modules/next/dist/next-server/lib/amp-context.js");
+
+var head_manager_context_1 = __webpack_require__(/*! ./head-manager-context */ "./node_modules/next/dist/next-server/lib/head-manager-context.js");
+
+var amp_1 = __webpack_require__(/*! ./amp */ "./node_modules/next/dist/next-server/lib/amp.js");
+
+function defaultHead() {
+  var inAmpMode = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+  var head = [react_1["default"].createElement("meta", {
+    charSet: "utf-8"
+  })];
+
+  if (!inAmpMode) {
+    head.push(react_1["default"].createElement("meta", {
+      name: "viewport",
+      content: "width=device-width"
+    }));
+  }
+
+  return head;
+}
+
+exports.defaultHead = defaultHead;
+
+function onlyReactElement(list, child) {
+  // React children can be "string" or "number" in this case we ignore them for backwards compat
+  if (typeof child === 'string' || typeof child === 'number') {
+    return list;
+  } // Adds support for React.Fragment
+
+
+  if (child.type === react_1["default"].Fragment) {
+    return list.concat(react_1["default"].Children.toArray(child.props.children).reduce(function (fragmentList, fragmentChild) {
+      if (typeof fragmentChild === 'string' || typeof fragmentChild === 'number') {
+        return fragmentList;
+      }
+
+      return fragmentList.concat(fragmentChild);
+    }, []));
+  }
+
+  return list.concat(child);
+}
+
+var METATYPES = ['name', 'httpEquiv', 'charSet', 'itemProp'];
+/*
+ returns a function for filtering head child elements
+ which shouldn't be duplicated, like <title/>
+ Also adds support for deduplicated `key` properties
+*/
+
+function unique() {
+  var keys = new Set();
+  var tags = new Set();
+  var metaTypes = new Set();
+  var metaCategories = {};
+  return function (h) {
+    var unique = true;
+
+    if (h.key && typeof h.key !== 'number' && h.key.indexOf('$') > 0) {
+      var key = h.key.slice(h.key.indexOf('$') + 1);
+
+      if (keys.has(key)) {
+        unique = false;
+      } else {
+        keys.add(key);
+      }
+    } // eslint-disable-next-line default-case
+
+
+    switch (h.type) {
+      case 'title':
+      case 'base':
+        if (tags.has(h.type)) {
+          unique = false;
+        } else {
+          tags.add(h.type);
+        }
+
+        break;
+
+      case 'meta':
+        for (var i = 0, len = METATYPES.length; i < len; i++) {
+          var metatype = METATYPES[i];
+          if (!h.props.hasOwnProperty(metatype)) continue;
+
+          if (metatype === 'charSet') {
+            if (metaTypes.has(metatype)) {
+              unique = false;
+            } else {
+              metaTypes.add(metatype);
+            }
+          } else {
+            var category = h.props[metatype];
+            var categories = metaCategories[metatype] || new Set();
+
+            if (categories.has(category)) {
+              unique = false;
+            } else {
+              categories.add(category);
+              metaCategories[metatype] = categories;
+            }
+          }
+        }
+
+        break;
+    }
+
+    return unique;
+  };
+}
+/**
+ *
+ * @param headElements List of multiple <Head> instances
+ */
+
+
+function reduceComponents(headElements, props) {
+  return headElements.reduce(function (list, headElement) {
+    var headElementChildren = react_1["default"].Children.toArray(headElement.props.children);
+    return list.concat(headElementChildren);
+  }, []).reduce(onlyReactElement, []).reverse().concat(defaultHead(props.inAmpMode)).filter(unique()).reverse().map(function (c, i) {
+    var key = c.key || i;
+    return react_1["default"].cloneElement(c, {
+      key: key
+    });
+  });
+}
+
+var Effect = side_effect_1["default"]();
+/**
+ * This component injects elements to `<head>` of your page.
+ * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
+ */
+
+function Head(_ref) {
+  var children = _ref.children;
+  return react_1["default"].createElement(amp_context_1.AmpStateContext.Consumer, null, function (ampState) {
+    return react_1["default"].createElement(head_manager_context_1.HeadManagerContext.Consumer, null, function (updateHead) {
+      return react_1["default"].createElement(Effect, {
+        reduceComponentsToState: reduceComponents,
+        handleStateChange: updateHead,
+        inAmpMode: amp_1.isInAmpMode(ampState)
+      }, children);
+    });
+  });
+}
+
+Head.rewind = Effect.rewind;
+exports["default"] = Head;
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/next-server/lib/mitt.js":
 /*!********************************************************!*\
   !*** ./node_modules/next/dist/next-server/lib/mitt.js ***!
@@ -22783,6 +23273,115 @@ function getRouteRegex(normalizedRoute) {
 }
 
 exports.getRouteRegex = getRouteRegex;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/side-effect.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/side-effect.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _classCallCheck = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+
+var _assertThisInitialized = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
+
+var _createClass = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+
+var _inherits = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
+
+var _possibleConstructorReturn = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
+
+var _getPrototypeOf = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
+
+var _toConsumableArray = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/toConsumableArray.js");
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var isServer = false;
+
+exports["default"] = function () {
+  var mountedInstances = new Set();
+  var state;
+
+  function emitChange(component) {
+    state = component.props.reduceComponentsToState(_toConsumableArray(mountedInstances), component.props);
+
+    if (component.props.handleStateChange) {
+      component.props.handleStateChange(state);
+    }
+  }
+
+  return /*#__PURE__*/function (_react_1$Component) {
+    _inherits(_class, _react_1$Component);
+
+    var _super = _createSuper(_class);
+
+    _createClass(_class, null, [{
+      key: "rewind",
+      // Used when server rendering
+      value: function rewind() {
+        var recordedState = state;
+        state = undefined;
+        mountedInstances.clear();
+        return recordedState;
+      }
+    }]);
+
+    function _class(props) {
+      var _this;
+
+      _classCallCheck(this, _class);
+
+      _this = _super.call(this, props);
+
+      if (isServer) {
+        mountedInstances.add(_assertThisInitialized(_this));
+        emitChange(_assertThisInitialized(_this));
+      }
+
+      return _this;
+    }
+
+    _createClass(_class, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        mountedInstances.add(this);
+        emitChange(this);
+      }
+    }, {
+      key: "componentDidUpdate",
+      value: function componentDidUpdate() {
+        emitChange(this);
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        mountedInstances["delete"](this);
+        emitChange(this);
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        return null;
+      }
+    }]);
+
+    return _class;
+  }(react_1.Component);
+};
 
 /***/ }),
 
@@ -27089,6 +27688,67 @@ AnimateHeight.defaultProps = {
 };
 
 exports.default = AnimateHeight;
+
+/***/ }),
+
+/***/ "./node_modules/react-big-calendar/lib/css/react-big-calendar.css":
+/*!************************************************************************!*\
+  !*** ./node_modules/react-big-calendar/lib/css/react-big-calendar.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../css-loader/dist/cjs.js??ref--5-oneOf-5-1!../../../next/dist/compiled/postcss-loader??__nextjs_postcss!./react-big-calendar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/react-big-calendar/lib/css/react-big-calendar.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../css-loader/dist/cjs.js??ref--5-oneOf-5-1!../../../next/dist/compiled/postcss-loader??__nextjs_postcss!./react-big-calendar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/react-big-calendar/lib/css/react-big-calendar.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../css-loader/dist/cjs.js??ref--5-oneOf-5-1!../../../next/dist/compiled/postcss-loader??__nextjs_postcss!./react-big-calendar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./node_modules/react-big-calendar/lib/css/react-big-calendar.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
 
 /***/ }),
 
@@ -33691,6 +34351,299 @@ module.exports = function isArrayish(obj) {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var stylesInDom = {};
+
+var isOldIE = function isOldIE() {
+  var memo;
+  return function memorize() {
+    if (typeof memo === 'undefined') {
+      // Test for IE <= 9 as proposed by Browserhacks
+      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+      // Tests for existence of standard globals is to allow style-loader
+      // to operate correctly into non-standard environments
+      // @see https://github.com/webpack-contrib/style-loader/issues/177
+      memo = Boolean(window && document && document.all && !window.atob);
+    }
+
+    return memo;
+  };
+}();
+
+var getTarget = function getTarget() {
+  var memo = {};
+  return function memorize(target) {
+    if (typeof memo[target] === 'undefined') {
+      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+        try {
+          // This will throw an exception if access to iframe is blocked
+          // due to cross-origin restrictions
+          styleTarget = styleTarget.contentDocument.head;
+        } catch (e) {
+          // istanbul ignore next
+          styleTarget = null;
+        }
+      }
+
+      memo[target] = styleTarget;
+    }
+
+    return memo[target];
+  };
+}();
+
+function listToStyles(list, options) {
+  var styles = [];
+  var newStyles = {};
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var css = item[1];
+    var media = item[2];
+    var sourceMap = item[3];
+    var part = {
+      css: css,
+      media: media,
+      sourceMap: sourceMap
+    };
+
+    if (!newStyles[id]) {
+      styles.push(newStyles[id] = {
+        id: id,
+        parts: [part]
+      });
+    } else {
+      newStyles[id].parts.push(part);
+    }
+  }
+
+  return styles;
+}
+
+function addStylesToDom(styles, options) {
+  for (var i = 0; i < styles.length; i++) {
+    var item = styles[i];
+    var domStyle = stylesInDom[item.id];
+    var j = 0;
+
+    if (domStyle) {
+      domStyle.refs++;
+
+      for (; j < domStyle.parts.length; j++) {
+        domStyle.parts[j](item.parts[j]);
+      }
+
+      for (; j < item.parts.length; j++) {
+        domStyle.parts.push(addStyle(item.parts[j], options));
+      }
+    } else {
+      var parts = [];
+
+      for (; j < item.parts.length; j++) {
+        parts.push(addStyle(item.parts[j], options));
+      }
+
+      stylesInDom[item.id] = {
+        id: item.id,
+        refs: 1,
+        parts: parts
+      };
+    }
+  }
+}
+
+function insertStyleElement(options) {
+  var style = document.createElement('style');
+
+  if (typeof options.attributes.nonce === 'undefined') {
+    var nonce =  true ? __webpack_require__.nc : undefined;
+
+    if (nonce) {
+      options.attributes.nonce = nonce;
+    }
+  }
+
+  Object.keys(options.attributes).forEach(function (key) {
+    style.setAttribute(key, options.attributes[key]);
+  });
+
+  if (typeof options.insert === 'function') {
+    options.insert(style);
+  } else {
+    var target = getTarget(options.insert || 'head');
+
+    if (!target) {
+      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+    }
+
+    target.appendChild(style);
+  }
+
+  return style;
+}
+
+function removeStyleElement(style) {
+  // istanbul ignore if
+  if (style.parentNode === null) {
+    return false;
+  }
+
+  style.parentNode.removeChild(style);
+}
+/* istanbul ignore next  */
+
+
+var replaceText = function replaceText() {
+  var textStore = [];
+  return function replace(index, replacement) {
+    textStore[index] = replacement;
+    return textStore.filter(Boolean).join('\n');
+  };
+}();
+
+function applyToSingletonTag(style, index, remove, obj) {
+  var css = remove ? '' : obj.css; // For old IE
+
+  /* istanbul ignore if  */
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = replaceText(index, css);
+  } else {
+    var cssNode = document.createTextNode(css);
+    var childNodes = style.childNodes;
+
+    if (childNodes[index]) {
+      style.removeChild(childNodes[index]);
+    }
+
+    if (childNodes.length) {
+      style.insertBefore(cssNode, childNodes[index]);
+    } else {
+      style.appendChild(cssNode);
+    }
+  }
+}
+
+function applyToTag(style, options, obj) {
+  var css = obj.css;
+  var media = obj.media;
+  var sourceMap = obj.sourceMap;
+
+  if (media) {
+    style.setAttribute('media', media);
+  }
+
+  if (sourceMap && btoa) {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    while (style.firstChild) {
+      style.removeChild(style.firstChild);
+    }
+
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var singleton = null;
+var singletonCounter = 0;
+
+function addStyle(obj, options) {
+  var style;
+  var update;
+  var remove;
+
+  if (options.singleton) {
+    var styleIndex = singletonCounter++;
+    style = singleton || (singleton = insertStyleElement(options));
+    update = applyToSingletonTag.bind(null, style, styleIndex, false);
+    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+  } else {
+    style = insertStyleElement(options);
+    update = applyToTag.bind(null, style, options);
+
+    remove = function remove() {
+      removeStyleElement(style);
+    };
+  }
+
+  update(obj);
+  return function updateStyle(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
+        return;
+      }
+
+      update(obj = newObj);
+    } else {
+      remove();
+    }
+  };
+}
+
+module.exports = function (list, options) {
+  options = options || {};
+  options.attributes = typeof options.attributes === 'object' ? options.attributes : {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+  // tags it will allow on a page
+
+  if (!options.singleton && typeof options.singleton !== 'boolean') {
+    options.singleton = isOldIE();
+  }
+
+  var styles = listToStyles(list, options);
+  addStylesToDom(styles, options);
+  return function update(newList) {
+    var mayRemove = [];
+
+    for (var i = 0; i < styles.length; i++) {
+      var item = styles[i];
+      var domStyle = stylesInDom[item.id];
+
+      if (domStyle) {
+        domStyle.refs--;
+        mayRemove.push(domStyle);
+      }
+    }
+
+    if (newList) {
+      var newStyles = listToStyles(newList, options);
+      addStylesToDom(newStyles, options);
+    }
+
+    for (var _i = 0; _i < mayRemove.length; _i++) {
+      var _domStyle = mayRemove[_i];
+
+      if (_domStyle.refs === 0) {
+        for (var j = 0; j < _domStyle.parts.length; j++) {
+          _domStyle.parts[j]();
+        }
+
+        delete stylesInDom[_domStyle.id];
+      }
+    }
+  };
+};
+
+/***/ }),
+
 /***/ "./node_modules/styled-system/dist/index.esm.js":
 /*!******************************************************!*\
   !*** ./node_modules/styled-system/dist/index.esm.js ***!
@@ -35406,10 +36359,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _chakra_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @chakra-ui/core */ "./node_modules/@chakra-ui/core/dist/es/index.js");
 /* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../theme */ "./theme.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./main.css */ "./pages/main.css");
+/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_main_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_big_calendar_lib_css_react_big_calendar_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-big-calendar/lib/css/react-big-calendar.css */ "./node_modules/react-big-calendar/lib/css/react-big-calendar.css");
+/* harmony import */ var react_big_calendar_lib_css_react_big_calendar_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_big_calendar_lib_css_react_big_calendar_css__WEBPACK_IMPORTED_MODULE_6__);
 
 var _jsxFileName = "/home/jreyes/Desktop/crewdemy/pages/_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 // import App from 'next/app'
+
+
+
 
 
  // Use at the root of your app
@@ -35422,17 +36384,45 @@ function MyApp(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 5
     }
-  }, __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 7
     }
-  })));
+  }, __jsx("title", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }
+  }, " Crewdemy")), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_2__["ColorModeProvider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 7
+    }
+  }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_2__["CSSReset"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 9
+    }
+  }), __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }))));
 } // Only uncomment this method if you have blocking data requirements for
 // every single page in your application. This disables the ability to
 // perform automatic static optimization, causing every page in your app to
@@ -35450,6 +36440,67 @@ function MyApp(_ref) {
 
 /***/ }),
 
+/***/ "./pages/main.css":
+/*!************************!*\
+  !*** ./pages/main.css ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./pages/main.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./pages/main.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./pages/main.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
 /***/ "./theme.js":
 /*!******************!*\
   !*** ./theme.js ***!
@@ -35459,8 +36510,24 @@ function MyApp(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/core */ "./node_modules/@chakra-ui/core/dist/es/index.js");
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 // example theme.js
-/* harmony default export */ __webpack_exports__["default"] = ({
+
+/* harmony default export */ __webpack_exports__["default"] = (_objectSpread({}, _chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["theme"], {
+  colors: _objectSpread({}, _chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["theme"].colors, {
+    brand: {
+      300: '#4FD1C5',
+      600: '#2C7A7B',
+      900: '#1D4044'
+    }
+  }),
   breakpoints: ['30em', '48em', '62em', '80em'],
   fonts: {
     heading: '"Avenir Next", sans-serif',
@@ -35479,7 +36546,7 @@ __webpack_require__.r(__webpack_exports__);
     '5xl': '3rem',
     '6xl': '4rem'
   }
-});
+}));
 
 /***/ }),
 

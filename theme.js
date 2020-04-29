@@ -1,5 +1,15 @@
 // example theme.js
+import { theme } from '@chakra-ui/core';
 export default {
+  ...theme,
+  colors: {
+    ...theme.colors,
+    brand: {
+      300: '#4FD1C5',
+      600: '#2C7A7B',
+      900: '#1D4044',
+    },
+  },
   breakpoints: ['30em', '48em', '62em', '80em'],
   fonts: {
     heading: '"Avenir Next", sans-serif',

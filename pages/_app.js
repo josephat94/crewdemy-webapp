@@ -1,15 +1,23 @@
 // import App from 'next/app'
 
 import React from 'react';
-import { ThemeProvider } from '@chakra-ui/core';
+import { ThemeProvider, CSSReset, ColorModeProvider } from '@chakra-ui/core';
 import theme from '../theme';
-
+import Head from 'next/head';
+import './main.css';
+import 'react-big-calendar/lib/css/react-big-calendar.css';
 // Use at the root of your app
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
+      <Head>
+        <title> Crewdemy</title>
+      </Head>
+      <ColorModeProvider>
+        <CSSReset />
+        <Component {...pageProps} />
+      </ColorModeProvider>
     </ThemeProvider>
   );
 }
