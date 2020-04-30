@@ -30,7 +30,7 @@ const Navbar = (props) => {
     toggleColorMode();
     toast({
       position: 'top',
-      title: 'Nuevo Logo Desbloqueado!',
+      title: 'Nuevo Logro Desbloqueado!',
       description:
         'Cambiaste al modo ' + (colorMode == 'light' ? 'dark' : 'light'),
       status: 'success',
