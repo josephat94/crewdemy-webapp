@@ -2,6 +2,8 @@ import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
 import Layout from '../components/layout/Layout';
 import { useRouter } from 'next/router';
+import DrawerCalendar from '../components/drawerCalendar/DrawerCalendar';
+import { useDisclosure } from '@chakra-ui/core';
 const myEventsList = [
   {
     start: moment().toDate(),
@@ -24,9 +26,10 @@ const myEventsList = [
 
 const localizer = momentLocalizer(moment);
 export default (props) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   const selectEvent = (e) => {
-    router.push("/course/1'");
+    onOpen();
   };
 
   return (
@@ -47,6 +50,7 @@ export default (props) => {
         onSelectEvent={selectEvent}
         style={{ height: 450 }}
       />
+      <DrawerCalendar isOpen={isOpen} onClose={onClose} />
     </Layout>
   );
 };

@@ -43,7 +43,7 @@ export default (props) => {
         <Box>
           <SimpleGrid columns={2} spacing={2}>
             <Box>
-              <Content head='Duracion' text={'20 Hrs'}></Content>
+              <Content head='Duración' text={'20 Hrs'}></Content>
             </Box>
             <Box>
               <Content head='Precio' text='$2500.00MXN'></Content>
@@ -52,8 +52,8 @@ export default (props) => {
           <SimpleGrid columns={1} spacing={2}>
             <Box>
               <Content
-                head='Descripcion'
-                text={'Aqui va la descrpcion del curso'}
+                head='Descripción'
+                text={'Aqui va la descripción del curso'}
               ></Content>
             </Box>
             <Box>
@@ -98,7 +98,7 @@ export default (props) => {
               <Content head='Categoria'>
                 <Flex flexDirection='row' flexWrap>
                   <Tag mr='10px' variantColor='cyan'>
-                    <TagLabel>Tecnologia</TagLabel>
+                    <TagLabel>Tecnología</TagLabel>
                     <TagIcon icon='check' size='12px' />
                   </Tag>
 

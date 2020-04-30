@@ -9,6 +9,7 @@ import {
   useColorMode,
   Icon,
   Image,
+  useToast,
 } from '@chakra-ui/core';
 
 import Link from 'next/link';
@@ -24,6 +25,19 @@ const Navbar = (props) => {
   const handleToggle = () => setShow(!show);
   const { colorMode, toggleColorMode } = useColorMode();
   const { onOpen } = props;
+  const toast = useToast();
+  const ChangeMode = () => {
+    toggleColorMode();
+    toast({
+      position: 'top',
+      title: 'Nuevo Logo Desbloqueado!',
+      description:
+        'Cambiaste al modo ' + (colorMode == 'light' ? 'dark' : 'light'),
+      status: 'success',
+      duration: 2000,
+      isClosable: true,
+    });
+  };
   return (
     <Flex
       as='nav'
@@ -85,11 +99,11 @@ const Navbar = (props) => {
         alignItems='center'
       >
         <MenuItems>
-          <Button bg='brand.900' onClick={toggleColorMode}>
+          <Button variant='ghost' variantColor='teal' onClick={ChangeMode}>
             {colorMode === 'light' ? (
               <Icon name='moon' size='24px' />
             ) : (
-              <Icon name='sun' size='24px' />
+              <Icon color='white' name='sun' size='24px' />
             )}
           </Button>
         </MenuItems>

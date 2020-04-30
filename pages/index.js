@@ -5,17 +5,37 @@ import {
   Icon,
   Grid,
   Divider,
+  Flex,
+  Input,
 } from '@chakra-ui/core';
 import Layout from '../components/layout/Layout';
 import Card from '../components/courses/Card';
+import PopoverBase from '../components/popOver/Popover';
 
 const Home = (props) => {
   return (
     <Layout>
+      <Flex justifyContent='center'>
+        <PopoverBase></PopoverBase>
+        <Input
+          ml='30px'
+          w={{ sm: '100px', md: '400px' }}
+          placeholder='Busca algo...'
+        />
+        <Button
+          variantColor='teal'
+          leftIcon='search'
+          ml='20px'
+          variant='outline'
+        >
+          Buscar
+        </Button>
+      </Flex>
+      <br></br> <Divider></Divider>
+      <br></br>
       <Heading as='h2' size='lg'>
         Más Populares
       </Heading>
-
       <Divider></Divider>
       <br></br>
       <Grid

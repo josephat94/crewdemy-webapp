@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -642,7 +642,7 @@ const MenuItems = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17,
+    lineNumber: 18,
     columnNumber: 3
   }
 }, children);
@@ -659,6 +659,20 @@ const Navbar = props => {
   const {
     onOpen
   } = props;
+  const toast = Object(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["useToast"])();
+
+  const ChangeMode = () => {
+    toggleColorMode();
+    toast({
+      position: 'top',
+      title: 'Nuevo Logo Desbloqueado!',
+      description: 'Cambiaste al modo ' + (colorMode == 'light' ? 'dark' : 'light'),
+      status: 'success',
+      duration: 2000,
+      isClosable: true
+    });
+  };
+
   return __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Flex"], _extends({
     as: "nav",
     align: "center",
@@ -672,7 +686,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 42,
       columnNumber: 5
     }
   }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Flex"], {
@@ -683,7 +697,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 53,
       columnNumber: 7
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -691,7 +705,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 54,
       columnNumber: 9
     }
   }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Image"], {
@@ -701,7 +715,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 55,
       columnNumber: 11
     }
   })), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -709,7 +723,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 57,
       columnNumber: 9
     }
   }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
@@ -719,7 +733,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 58,
       columnNumber: 11
     }
   }, "Crewdemy"))), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -731,7 +745,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 64,
       columnNumber: 7
     }
   }, __jsx("svg", {
@@ -742,14 +756,14 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 65,
       columnNumber: 9
     }
   }, __jsx("title", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 71,
       columnNumber: 11
     }
   }, "Menu"), __jsx("path", {
@@ -757,7 +771,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 72,
       columnNumber: 11
     }
   }))), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -774,7 +788,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 76,
       columnNumber: 7
     }
   }, ' ', __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -782,7 +796,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 83,
       columnNumber: 9
     }
   }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -792,7 +806,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 84,
       columnNumber: 11
     }
   }, "Cursos Presenciales")), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -802,7 +816,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 88,
       columnNumber: 9
     }
   }, "Nosotros"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -812,7 +826,7 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 91,
       columnNumber: 9
     }
   }, "CrewSoft")), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -828,23 +842,24 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 96,
       columnNumber: 7
     }
   }, __jsx(MenuItems, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 101,
       columnNumber: 9
     }
   }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-    bg: "brand.900",
-    onClick: toggleColorMode,
+    variant: "ghost",
+    variantColor: "teal",
+    onClick: ChangeMode,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 102,
       columnNumber: 11
     }
   }, colorMode === 'light' ? __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
@@ -853,16 +868,17 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 104,
       columnNumber: 15
     }
   }) : __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
+    color: "white",
     name: "sun",
     size: "24px",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 106,
       columnNumber: 15
     }
   }))), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
@@ -872,13 +888,151 @@ const Navbar = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 111,
       columnNumber: 9
     }
   }, "Ingresar")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
+
+/***/ }),
+
+/***/ "./components/popOver/Popover.js":
+/*!***************************************!*\
+  !*** ./components/popOver/Popover.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/core */ "@chakra-ui/core");
+/* harmony import */ var _chakra_ui_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/home/jreyes/Desktop/crewdemy/components/popOver/Popover.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+function PopoverBase(props) {
+  const categories = ['Programación web', 'Backend', 'Frontend', 'Mobile', 'Diseño', 'Marketing Digital', 'Ofimática', 'Online', 'Presenciales'];
+  const initialFocusRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef();
+  return __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Popover"], {
+    initialFocusRef: initialFocusRef,
+    placement: "bottom",
+    trigger: "hover",
+    closeOnBlur: false,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 5
+    }
+  }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["PopoverTrigger"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 7
+    }
+  }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    variant: "outline",
+    variantColor: "teal",
+    w: "200px",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 9
+    }
+  }, "Categor\xEDas")), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["PopoverContent"], {
+    zIndex: 4
+    /*   color='white'
+    bg='brand.900' */
+    ,
+    borderColor: "brand.300",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 7
+    }
+  }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["PopoverHeader"], {
+    pt: 4,
+    fontWeight: "bold",
+    border: "0",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 9
+    }
+  }, "Nuestras categorias"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["PopoverArrow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 9
+    }
+  }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["PopoverCloseButton"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 9
+    }
+  }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["PopoverBody"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 9
+    }
+  }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
+    spacing: 3,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 11
+    }
+  }, categories.map((cat, index) => __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["ListItem"], {
+    cursor: "pointer",
+    className: "grow-sm",
+    key: 'cat-' + index,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 15
+    }
+  }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["ListIcon"], {
+    icon: "check-circle",
+    color: "green.500",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 17
+    }
+  }), cat)))), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["PopoverFooter"], {
+    border: "0",
+    d: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    pb: 4,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68,
+      columnNumber: 9
+    }
+  })));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (PopoverBase);
 
 /***/ }),
 
@@ -2566,9 +2720,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _chakra_ui_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_layout_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout/Layout */ "./components/layout/Layout.js");
 /* harmony import */ var _components_courses_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/courses/Card */ "./components/courses/Card.js");
+/* harmony import */ var _components_popOver_Popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/popOver/Popover */ "./components/popOver/Popover.js");
 var _jsxFileName = "/home/jreyes/Desktop/crewdemy/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2578,84 +2734,67 @@ const Home = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 17,
       columnNumber: 5
     }
-  }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
-    as: "h2",
-    size: "lg",
+  }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Flex"], {
+    justifyContent: "center",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 18,
       columnNumber: 7
     }
-  }, "M\xE1s Populares"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
+  }, __jsx(_components_popOver_Popover__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19,
-      columnNumber: 7
+      columnNumber: 9
     }
-  }), __jsx("br", {
+  }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+    ml: "30px",
+    w: {
+      sm: '100px',
+      md: '400px'
+    },
+    placeholder: "Busca algo...",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20,
-      columnNumber: 7
+      columnNumber: 9
     }
-  }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
-    templateColumns: {
-      sm: 'repeat(1,1fr)',
-      md: 'repeat(4,1fr)'
-    },
-    gap: 10,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 7
-    }
-  }, __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    variantColor: "teal",
+    leftIcon: "search",
+    ml: "20px",
+    variant: "outline",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25,
       columnNumber: 9
     }
-  }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Buscar")), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 9
+      lineNumber: 34,
+      columnNumber: 7
     }
-  }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), " ", __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 9
+      lineNumber: 34,
+      columnNumber: 17
     }
-  }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 9
-    }
-  }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 9
-    }
-  })), __jsx("br", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 35,
       columnNumber: 7
     }
   }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
@@ -2664,21 +2803,21 @@ const Home = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 36,
       columnNumber: 7
     }
-  }, "Pr\xF3ximos cursos presenciales"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
+  }, "M\xE1s Populares"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 39,
       columnNumber: 7
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 40,
       columnNumber: 7
     }
   }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -2690,28 +2829,105 @@ const Home = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 41,
       columnNumber: 7
     }
   }, __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 45,
       columnNumber: 9
     }
   }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 46,
       columnNumber: 9
     }
   }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 47,
+      columnNumber: 9
+    }
+  }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 9
+    }
+  }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 9
+    }
+  })), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 7
+    }
+  }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
+    as: "h2",
+    size: "lg",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 7
+    }
+  }, "Pr\xF3ximos cursos presenciales"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 7
+    }
+  }), __jsx("br", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 7
+    }
+  }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    templateColumns: {
+      sm: 'repeat(1,1fr)',
+      md: 'repeat(4,1fr)'
+    },
+    gap: 10,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 7
+    }
+  }, __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 9
+    }
+  }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 9
+    }
+  }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
       columnNumber: 9
     }
   })), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
@@ -2720,7 +2936,7 @@ const Home = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 65,
       columnNumber: 7
     }
   }));
@@ -2730,7 +2946,7 @@ const Home = props => {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

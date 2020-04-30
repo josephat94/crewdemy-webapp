@@ -360,7 +360,7 @@ var MenuItems = function MenuItems(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 18,
       columnNumber: 3
     }
   }, children);
@@ -381,6 +381,20 @@ var Navbar = function Navbar(props) {
       toggleColorMode = _useColorMode.toggleColorMode;
 
   var onOpen = props.onOpen;
+  var toast = Object(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["useToast"])();
+
+  var ChangeMode = function ChangeMode() {
+    toggleColorMode();
+    toast({
+      position: 'top',
+      title: 'Nuevo Logo Desbloqueado!',
+      description: 'Cambiaste al modo ' + (colorMode == 'light' ? 'dark' : 'light'),
+      status: 'success',
+      duration: 2000,
+      isClosable: true
+    });
+  };
+
   return __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Flex"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     as: "nav",
     align: "center",
@@ -394,7 +408,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 42,
       columnNumber: 5
     }
   }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Flex"], {
@@ -405,7 +419,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 53,
       columnNumber: 7
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -413,7 +427,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 54,
       columnNumber: 9
     }
   }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Image"], {
@@ -423,7 +437,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 55,
       columnNumber: 11
     }
   })), __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -431,7 +445,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 57,
       columnNumber: 9
     }
   }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Heading"], {
@@ -441,7 +455,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 58,
       columnNumber: 11
     }
   }, "Crewdemy"))), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -453,7 +467,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 64,
       columnNumber: 7
     }
   }, __jsx("svg", {
@@ -464,14 +478,14 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 65,
       columnNumber: 9
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 71,
       columnNumber: 11
     }
   }, "Menu"), __jsx("path", {
@@ -479,7 +493,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 72,
       columnNumber: 11
     }
   }))), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -496,7 +510,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 76,
       columnNumber: 7
     }
   }, ' ', __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -504,7 +518,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 83,
       columnNumber: 9
     }
   }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -514,7 +528,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 84,
       columnNumber: 11
     }
   }, "Cursos Presenciales")), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -524,7 +538,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 88,
       columnNumber: 9
     }
   }, "Nosotros"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -534,7 +548,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 91,
       columnNumber: 9
     }
   }, "CrewSoft")), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -550,23 +564,24 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 96,
       columnNumber: 7
     }
   }, __jsx(MenuItems, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 101,
       columnNumber: 9
     }
   }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
-    bg: "brand.900",
-    onClick: toggleColorMode,
+    variant: "ghost",
+    variantColor: "teal",
+    onClick: ChangeMode,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 102,
       columnNumber: 11
     }
   }, colorMode === 'light' ? __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
@@ -575,16 +590,17 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 104,
       columnNumber: 15
     }
   }) : __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
+    color: "white",
     name: "sun",
     size: "24px",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 106,
       columnNumber: 15
     }
   }))), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -594,7 +610,7 @@ var Navbar = function Navbar(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 111,
       columnNumber: 9
     }
   }, "Ingresar")));
@@ -37319,7 +37335,7 @@ var imageUrl = 'https://img-a.udemycdn.com/course/240x135/2056209_90a3_2.jpg';
       columnNumber: 13
     }
   }, __jsx(Content, {
-    head: "Duracion",
+    head: "Duraci\xF3n",
     text: '20 Hrs',
     __self: _this,
     __source: {
@@ -37360,8 +37376,8 @@ var imageUrl = 'https://img-a.udemycdn.com/course/240x135/2056209_90a3_2.jpg';
       columnNumber: 13
     }
   }, __jsx(Content, {
-    head: "Descripcion",
-    text: 'Aqui va la descrpcion del curso',
+    head: "Descripci\xF3n",
+    text: 'Aqui va la descripción del curso',
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -37516,7 +37532,7 @@ var imageUrl = 'https://img-a.udemycdn.com/course/240x135/2056209_90a3_2.jpg';
       lineNumber: 101,
       columnNumber: 21
     }
-  }, "Tecnologia"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["TagIcon"], {
+  }, "Tecnolog\xEDa"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["TagIcon"], {
     icon: "check",
     size: "12px",
     __self: _this,
