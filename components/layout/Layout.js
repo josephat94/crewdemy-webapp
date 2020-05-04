@@ -6,7 +6,7 @@ import Footer from '../footer/Footer';
 const Layout = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <div style={{ width: '100%' }}>
+    <>
       <Head>
         <link
           href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap'
@@ -29,7 +29,7 @@ const Layout = (props) => {
       </Grid>
 
       <LoginModal isOpen={isOpen} onClose={onClose}></LoginModal>
-    </div>
+    </>
   );
 };
 

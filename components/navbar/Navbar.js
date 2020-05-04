@@ -1,28 +1,19 @@
-import React from 'react';
+import { useState } from 'react';
 import {
   Box,
-  Heading,
   Flex,
-  Text,
-  Button,
-  Switch,
-  useColorMode,
-  Icon,
   Image,
+  Heading,
+  Button,
+  Divider,
+  useColorMode,
   useToast,
+  Icon,
 } from '@chakra-ui/core';
-
+import { RiMenuLine } from 'react-icons/ri';
 import Link from 'next/link';
-
-const MenuItems = ({ children }) => (
-  <Text mt={{ base: 4, md: 0 }} mr={6} display='block'>
-    {children}
-  </Text>
-);
-
 const Navbar = (props) => {
-  const [show, setShow] = React.useState(false);
-  const handleToggle = () => setShow(!show);
+  const [toggle, setToggle] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
   const { onOpen } = props;
   const toast = useToast();
@@ -39,80 +30,97 @@ const Navbar = (props) => {
     });
   };
   return (
-    <Flex
-      as='nav'
-      align='center'
-      justify='space-between'
-      wrap='wrap'
-      padding='1.5rem'
-      bg='brand.900'
-      color='white'
-      width='100%'
-      {...props}
-    >
-      <Flex className='wow-animate grow' cursor='pointer' align='center' mr={5}>
-        <Link href='/'>
-          <Image mr='5px' height='40px' src='/img/logo.png'></Image>
-        </Link>
-        <Link href='/'>
-          <Heading as='h1' size='lg' letterSpacing={'-.1rem'}>
-            Crewdemy
-          </Heading>
-        </Link>
-      </Flex>
-
-      <Box display={{ sm: 'block', md: 'none' }} onClick={handleToggle}>
-        <svg
-          fill='white'
-          width='12px'
-          viewBox='0 0 20 20'
-          xmlns='http://www.w3.org/2000/svg'
-        >
-          <title>Menu</title>
-          <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
-        </svg>
-      </Box>
-
-      <Box
-        display={{ sm: show ? 'block' : 'none', md: 'flex' }}
-        width={{ sm: 'full', md: 'auto' }}
-        alignItems='center'
-        flexGrow={1}
-      >
-        {' '}
-        <Link href='/presenciales'>
-          <Box className='grow' mr='20px' cursor='pointer'>
-            Cursos Presenciales
-          </Box>
-        </Link>
-        <Box className='grow' mr='20px' cursor='pointer'>
-          Nosotros
-        </Box>
-        <Box className='grow' mr='20px' cursor='pointer'>
-          CrewSoft
-        </Box>
-      </Box>
-
-      <Box
-        display={{ sm: show ? 'block' : 'none', md: 'flex' }}
-        mt={{ base: 4, md: 0 }}
-        alignItems='center'
-      >
-        <MenuItems>
-          <Button variant='ghost' variantColor='teal' onClick={ChangeMode}>
+    <div className='navBar'>
+      <Flex w='100%' justifyContent='space-between' alignItems='center'>
+        <Flex alignItems='center'>
+          <Flex alignItems='center' cursor='pointer'>
+            <Link href='/'>
+              <Image src='/img/logo.png' h='50px' />
+            </Link>
+            <Link href='/'>
+              <Heading fontSize='1.5rem' ml='10px'>
+                Crewdemy
+              </Heading>
+            </Link>
+          </Flex>
+          <Flex h='100%' alignItems='center' className='opts-large' ml='20px'>
+            <Link href='/presenciales'>
+              <Box cursor='pointer' ml='10px'>
+                Calendario
+              </Box>
+            </Link>
+            <Box cursor='pointer' ml='10px'>
+              CrewdemyLive
+            </Box>
+            <Box cursor='pointer' ml='10px'>
+              Nosotros
+            </Box>
+            <Box cursor='pointer' ml='10px'>
+              Crewsoft
+            </Box>
+          </Flex>
+        </Flex>
+        <Flex>
+          <Button
+            className='opts-large'
+            variant='ghost'
+            variantColor='teal'
+            onClick={ChangeMode}
+          >
             {colorMode === 'light' ? (
               <Icon name='moon' size='24px' />
             ) : (
               <Icon color='white' name='sun' size='24px' />
             )}
           </Button>
-        </MenuItems>
-
-        <Button onClick={onOpen} bg='brand.300' border='0px'>
+          <Button onClick={onOpen} className='opts-large' variantColor='teal'>
+            Ingresar
+          </Button>
+          <Button
+            variant='ghost'
+            fontSize='30px'
+            onClick={() => {
+              setToggle(!toggle);
+            }}
+          >
+            <Box as={RiMenuLine} />
+          </Button>
+        </Flex>
+      </Flex>
+      <ul className={toggle ? 'links show-nav' : 'no-links'}>
+        <Divider></Divider>
+        <Link href='/presenciales'>
+          <li href='#'>Presenciales</li>
+        </Link>
+        <Divider></Divider>
+        <li href='#'>Nosotros</li>
+        <Divider></Divider>
+        <Divider></Divider>
+        <li href='#'>CrewdemyLive</li>
+        <Divider></Divider>
+        <li href='#'>Crewsoft</li>
+        <Divider></Divider>
+        <li
+          href='#'
+          onClick={() => {
+            ChangeMode();
+            setToggle(!toggle);
+          }}
+        >
+          Modo nocturno
+        </li>
+        <Divider></Divider>
+        <li
+          href='#'
+          onClick={() => {
+            onOpen();
+            setToggle(!toggle);
+          }}
+        >
           Ingresar
-        </Button>
-      </Box>
-    </Flex>
+        </li>
+      </ul>
+    </div>
   );
 };
 

@@ -7,6 +7,8 @@ import {
   Divider,
   Flex,
   Input,
+  SimpleGrid,
+  Box,
 } from '@chakra-ui/core';
 import Layout from '../components/layout/Layout';
 import Card from '../components/courses/Card';
@@ -15,22 +17,15 @@ import PopoverBase from '../components/popOver/Popover';
 const Home = (props) => {
   return (
     <Layout>
-      <Flex justifyContent='center'>
+      <SimpleGrid columns={[1, 5, 5]} spacing='20px'>
+        <Box></Box>
         <PopoverBase></PopoverBase>
-        <Input
-          ml='30px'
-          w={{ sm: '100px', md: '400px' }}
-          placeholder='Busca algo...'
-        />
-        <Button
-          variantColor='teal'
-          leftIcon='search'
-          ml='20px'
-          variant='outline'
-        >
+        <Input w='100%' placeholder='Busca algo...' />
+        <Button variantColor='teal' leftIcon='search' variant='outline'>
           Buscar
         </Button>
-      </Flex>
+        <Box></Box>
+      </SimpleGrid>
       <br></br> <Divider></Divider>
       <br></br>
       <Heading as='h2' size='lg'>
@@ -38,30 +33,13 @@ const Home = (props) => {
       </Heading>
       <Divider></Divider>
       <br></br>
-      <Grid
-        templateColumns={{ sm: 'repeat(1,1fr)', md: 'repeat(4,1fr)' }}
-        gap={10}
-      >
+      <SimpleGrid columns={[1, null, 4]} spacing='40px'>
         <Card></Card>
         <Card></Card>
         <Card></Card>
         <Card></Card>
         <Card></Card>
-      </Grid>
-      <br></br>
-      <Heading as='h2' size='lg'>
-        Próximos cursos presenciales
-      </Heading>
-      <Divider></Divider>
-      <br></br>
-      <Grid
-        templateColumns={{ sm: 'repeat(1,1fr)', md: 'repeat(4,1fr)' }}
-        gap={10}
-      >
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-      </Grid>
+      </SimpleGrid>
       <Heading as='h2' size='lg'></Heading>
     </Layout>
   );

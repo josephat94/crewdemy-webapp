@@ -39,7 +39,7 @@ export default (props) => {
       </Heading>
       <Divider></Divider>
 
-      <SimpleGrid columns={2} spacing={2}>
+      <SimpleGrid columns={[1, 2, 2]} spacing={2}>
         <Box>
           <SimpleGrid columns={2} spacing={2}>
             <Box>
@@ -101,7 +101,6 @@ export default (props) => {
                     <TagLabel>Tecnología</TagLabel>
                     <TagIcon icon='check' size='12px' />
                   </Tag>
-
                   <Tag variantColor='cyan'>
                     <TagLabel>Programación</TagLabel>
                     <TagIcon icon='check' size='12px' />

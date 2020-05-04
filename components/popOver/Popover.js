@@ -36,7 +36,7 @@ function PopoverBase(props) {
       closeOnBlur={false}
     >
       <PopoverTrigger>
-        <Button variant='outline' variantColor='teal' w='200px'>
+        <Button variant='outline' variantColor='teal' w='100%'>
           Categorías
         </Button>
       </PopoverTrigger>
