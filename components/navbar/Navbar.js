@@ -49,9 +49,11 @@ const Navbar = (props) => {
                 Calendario
               </Box>
             </Link>
-            <Box cursor='pointer' ml='10px'>
-              CrewdemyLive
-            </Box>
+            <Link href='/live'>
+              <Box cursor='pointer' ml='10px'>
+                CrewdemyLive
+              </Box>
+            </Link>
             <Box cursor='pointer' ml='10px'>
               Nosotros
             </Box>
@@ -96,7 +98,9 @@ const Navbar = (props) => {
         <li href='#'>Nosotros</li>
         <Divider></Divider>
         <Divider></Divider>
-        <li href='#'>CrewdemyLive</li>
+        <Link href='/live'>
+          <li href='#'>CrewdemyLive</li>
+        </Link>
         <Divider></Divider>
         <li href='#'>Crewsoft</li>
         <Divider></Divider>

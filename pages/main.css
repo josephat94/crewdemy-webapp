@@ -118,6 +118,35 @@
   display: none !important;
   transition: all 0.3s;
 }
+
+.message {
+  color: white;
+  padding: 18px 20px;
+  margin-top: 20px;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  max-width: 90%;
+  min-width: 100px;
+  width: auto;
+  position: relative;
+  background: teal;
+}
+.message::after {
+  content: '';
+  z-index: 100;
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+  border-left: 25px solid transparent;
+  border-bottom: 25px solid teal;
+}
+
 /* Media screen size */
 @media screen and (min-width: 768px) {
   .opts-large {
