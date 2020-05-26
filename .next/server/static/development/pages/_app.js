@@ -156,32 +156,59 @@ function MyApp({
       lineNumber: 14,
       columnNumber: 7
     }
-  }, __jsx("title", {
+  }, __jsx("script", {
+    type: "text/javascript",
+    src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 9
     }
+  }), __jsx("script", {
+    type: "text/javascript",
+    src: "https://js.openpay.mx/openpay.v1.min.js",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }), __jsx("script", {
+    type: "text/javascript",
+    src: "https://js.openpay.mx/openpay-data.v1.min.js",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 9
+    }
+  }), __jsx("title", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 9
+    }
   }, " Crewdemy")), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["ColorModeProvider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 29,
       columnNumber: 7
     }
   }, __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["CSSReset"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 30,
       columnNumber: 9
     }
   }), __jsx(Component, _extends({}, pageProps, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 31,
       columnNumber: 9
     }
   }))));

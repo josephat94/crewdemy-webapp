@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/core';
 import Layout from '../../components/layout/Layout';
 import Tema from './Tema';
+import Link from 'next/link';
 
 const Content = ({ head, text, children }) => {
   return (
@@ -72,9 +73,10 @@ export default (props) => {
               <Content head='Preview'>
                 <Image w='100% ' src={imageUrl} />
                 <Divider></Divider>
-                <Button
-                  onClick={() => {
-                    toast({
+                <Link href='/payment'>
+                  <Button
+                    onClick={() => {
+                      /*             toast({
                       position: 'top-right',
                       title: 'Curso Comprado!.',
                       description:
@@ -82,13 +84,14 @@ export default (props) => {
                       status: 'success',
                       duration: 9000,
                       isClosable: true,
-                    });
-                  }}
-                  variantColor='teal'
-                  isFullWidth={true}
-                >
-                  Comprar Curso
-                </Button>
+                    }); */
+                    }}
+                    variantColor='teal'
+                    isFullWidth={true}
+                  >
+                    Comprar Curso
+                  </Button>
+                </Link>
               </Content>
             </Box>
           </SimpleGrid>

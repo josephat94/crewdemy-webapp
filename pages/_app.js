@@ -12,6 +12,18 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
+        <script
+          type='text/javascript'
+          src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'
+        ></script>
+        <script
+          type='text/javascript'
+          src='https://js.openpay.mx/openpay.v1.min.js'
+        ></script>
+        <script
+          type='text/javascript'
+          src='https://js.openpay.mx/openpay-data.v1.min.js'
+        ></script>
         <title> Crewdemy</title>
       </Head>
       <ColorModeProvider>
