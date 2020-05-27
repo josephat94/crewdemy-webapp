@@ -66,8 +66,8 @@ export const Live = (props) => {
   };
   useEffect(() => {
     OpenPay.setSandboxMode(true);
-    OpenPay.setId('mqrfjs0h2c8pxopp6c63');
-    OpenPay.setApiKey('pk_0da9497fbffc4c5996b42ce351972d92');
+    OpenPay.setId(process.env.OPEN_PAY_ID);
+    OpenPay.setApiKey(process.env.OPEN_PAY_PKEY);
   }, []);
   const createToken = (e) => {
     e.preventDefault();

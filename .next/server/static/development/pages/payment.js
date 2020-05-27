@@ -2603,8 +2603,8 @@ const Live = props => {
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     OpenPay.setSandboxMode(true);
-    OpenPay.setId('mqrfjs0h2c8pxopp6c63');
-    OpenPay.setApiKey('pk_0da9497fbffc4c5996b42ce351972d92');
+    OpenPay.setId("mqrfjs0h2c8pxopp6c63");
+    OpenPay.setApiKey("pk_0da9497fbffc4c5996b42ce351972d92");
   }, []);
 
   const createToken = e => {

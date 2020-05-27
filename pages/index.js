@@ -23,6 +23,7 @@ const Home = (props) => {
         <Input w='100%' placeholder='Busca algo...' />
         <Button variantColor='teal' leftIcon='search' variant='outline'>
           Buscar
+          {process.env.PORT}
         </Button>
         <Box></Box>
       </SimpleGrid>

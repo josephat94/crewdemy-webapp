@@ -2863,32 +2863,32 @@ const Home = props => {
       lineNumber: 24,
       columnNumber: 9
     }
-  }, "Buscar"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+  }, "Buscar", "4000"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 9
     }
   })), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 30,
       columnNumber: 7
     }
   }), " ", __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 30,
       columnNumber: 17
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 31,
       columnNumber: 7
     }
   }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
@@ -2897,21 +2897,21 @@ const Home = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 32,
       columnNumber: 7
     }
   }, "M\xE1s Populares"), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 35,
       columnNumber: 7
     }
   }), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 36,
       columnNumber: 7
     }
   }), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["SimpleGrid"], {
@@ -2920,17 +2920,10 @@ const Home = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 37,
       columnNumber: 7
     }
   }, __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 9
-    }
-  }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -2958,13 +2951,20 @@ const Home = props => {
       lineNumber: 41,
       columnNumber: 9
     }
+  }), __jsx(_components_courses_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 9
+    }
   })), __jsx(_chakra_ui_core__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
     as: "h2",
     size: "lg",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 44,
       columnNumber: 7
     }
   }));
